@@ -1,0 +1,7 @@
+sideA = 2   # month
+sideB = 15  # day
+
+area = sideA * sideB
+print("Side A is", sideA)
+print("Side B is", sideB)
+print("The area of the rectangle is", area)

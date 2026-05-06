@@ -1,0 +1,15 @@
+#why did I leave my sandwich in the fridge on site
+
+# bill = 28.50 # really!?
+# tipPercent = 0.20 # 20 percent for turning a tablet around!?
+# tipAmount = bill * tipPercent
+# print(f"The tip on a ${bill:.2f} restaurant bill is ${tipAmount:.2f}")
+
+
+bill = 28.50 # really!?
+tipPercent = float(input("what percent would you like to tip... ex. if 20% simply type 20"))
+tipAmount = bill * (tipPercent/100)
+print(f"The tip on a ${bill:.2f} restaurant bill is ${tipAmount:.2f}")
+
+
+# suprised that worked the first time also the f string thing is here
