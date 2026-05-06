@@ -1,0 +1,7 @@
+import math 
+
+diameter = 15
+radius = diameter/2
+area = math.pi * radius**2
+
+print("the area of a circle with the radius", radius, "is", round(area,2))

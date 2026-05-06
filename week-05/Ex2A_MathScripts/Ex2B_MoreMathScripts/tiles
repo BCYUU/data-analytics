@@ -1,0 +1,14 @@
+
+import math
+
+l = 12
+w = 14
+roomArea = l*w
+
+tilesNeeded = roomArea
+boxNeeded = math.ceil(tilesNeeded/10) # 10 per box
+boxExtra = math.ceil(boxNeeded*1.1) # the extra
+
+print(f"room area = {roomArea} sqft")
+print(f"boxes needed(min) = {boxNeeded}")
+print(f"total boxes for safety = {boxExtra}")

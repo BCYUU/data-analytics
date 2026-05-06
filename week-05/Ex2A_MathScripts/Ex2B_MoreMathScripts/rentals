@@ -1,0 +1,32 @@
+
+import math
+
+t = 38 # people
+vanCap = 15
+vanCost = 250
+
+
+vanNeed = math.ceil(t/vanCap)
+totalCost = vanNeed*vanCost
+cpt = totalCost/t # cost per tourist
+
+print(f"vans needed = {vanNeed}")
+print(f"cost = ${totalCost}")
+print(f"cost per person = ${round(cpt,2)}")
+
+# a) How much money did your script say you had to charge per person? 
+# 
+#   19.74
+#    
+# b) If you multiply that out, how much did you collect?
+# 
+#   734.92
+#   
+# c) How much were the vans?
+# 
+#   750
+#   
+# d) Why do you have leftover money?
+#   
+#   its priced per person and you cant pay for half a van
+# 

@@ -1,0 +1,13 @@
+
+
+#ex val
+assets = 1000 +1000 + 1000 # car + poor decision +depreciating asset
+debts = 1234564315465 + 8000 + 3000 #mortgage + car loan + credit cards
+
+totalAssets = assets
+totalDebts = debts
+netWorth = totalAssets-totalDebts
+
+print("Your total assets are", totalAssets)
+print("Your total debts are", totalDebts)
+print("Your net worth is", netWorth)

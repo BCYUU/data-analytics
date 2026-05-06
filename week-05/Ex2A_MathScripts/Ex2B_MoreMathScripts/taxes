@@ -1,0 +1,11 @@
+
+
+
+
+
+sal = 4000
+taxRate = 0.23
+taxesWithheld = sal * taxRate
+
+print(f"taxes withheld = ${round(taxesWithheld,2)}")
+print("how sad!!!")
