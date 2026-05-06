@@ -77,7 +77,7 @@ having count(p.ProductID) >= 5;
 -- and inventory value (calculated by multiplying unit price by the number of units on
 -- hand). Sort the results in descending order by value. If two or more have the same
 -- value, order by product name. If a product is not in stock, leave it off the list.
-select productid, productname, unitprice*unitsinstock as `inventory value` -- used "" inestead of backticks the first time
+select productid, productname, unitprice*unitsinstock as `inventory value` -- used "" instead of backticks the first time
 from products
 where UnitsInStock > 0
 order by  `inventory value` desc, productname asc
