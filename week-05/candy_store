@@ -1,0 +1,22 @@
+
+
+
+candyType = ("gummy", "worm", "hard")
+flavors = ("water","notwater","stillnotwater")
+
+candyCombo = set()
+
+candyCombo.add (f"{candyType[0]} - {flavors[0]}")
+candyCombo.add (f"{candyType[1]} - {flavors[0]}")
+candyCombo.add (f"{candyType[2]} - {flavors[0]}")
+candyCombo.add (f"{candyType[0]} - {flavors[1]}")
+candyCombo.add (f"{candyType[0]} - {flavors[2]}")
+candyCombo.add (f"{candyType[2]} - {flavors[2]}")
+candyCombo.add (f"{candyType[1]} - {flavors[1]}")
+
+print("todays options include =")
+print (candyCombo)
+
+# comes out in a different order
+
+

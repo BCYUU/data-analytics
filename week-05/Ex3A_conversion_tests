@@ -1,0 +1,51 @@
+# Description: This script tests various numeric  
+#              conversion techniques 
+# Author: Sam Q. Newprogrammer #just gonna leave this like this
+
+a = "  101.1 " 
+b = '55' 
+c = "402 Stevens" 
+d = 'Number 5  ' 
+
+
+# so many things to be done to them... tortured variables....
+
+# for victim a....
+a_stripped = a.strip()                    # yup
+a_float = float(a_stripped)               # 101.1
+a_int_from_float = int(float(a_stripped)) # 101
+# a_int_direct = int(a)                   # ValueError: invalid literal for int() 
+
+# for b
+b_int = int(b)        # 55 makes sense
+b_float = float(b)    # 55.0 yeah thats a float
+
+
+
+# for c
+# c_int = int(c)      # ValueError invalid literal for int()
+# c_float = float(c)  # ValueError could not convert string to float: 
+c_numeric = c[:3]     
+c_int = int(c_numeric)  # 402
+
+# For d
+# d_int = int(d)      # valueError
+# d_float = float(d)  # valueError
+d_numeric = d[7:].strip()   # Slicing 5
+d_int = int(d_numeric)      # 5
+
+# Print all variables and types
+print("a:", a, type(a))
+print("a_stripped:", a_stripped, type(a_stripped))
+print("a_float:", a_float, type(a_float))
+print("a_int_from_float:", a_int_from_float, type(a_int_from_float))
+print("b_int:", b_int, type(b_int))
+print("b_float:", b_float, type(b_float))
+print("c_numeric:", c_numeric, type(c_numeric))
+print("c_int:", c_int, type(c_int))
+print("d_numeric:", d_numeric, type(d_numeric))
+print("d_int:", d_int, type(d_int))
+
+# .strip() on a and d
+print("Strip test for a:", a.strip(),  type(a.strip()))
+print("Strip test for d:", d.strip(), type(d.strip()))

@@ -1,0 +1,35 @@
+
+
+contactInfo = { # not putting actual info
+    "name": "James Chen",
+    "address": "123 Number Avenue",
+    "city": "Austin",
+    "state": "TX",
+    "zip": "12321"
+}
+
+
+print("Mailing Address:")
+print(f""" 
+{contactInfo["name"]}
+{contactInfo["address"]}
+{contactInfo["city"]}, {contactInfo["state"]} {contactInfo["zip"]}
+""")
+
+contactInfo.pop("name")
+
+fullName = {
+    "firstName": "James",
+    "lastName": "Chen"
+}
+
+fullName.update({"honorific": "Mr."})
+
+contactInfo.update({"fullName":fullName})
+
+print("Updated Mailing Address:")
+print(f"""
+{contactInfo["fullName"]["honorific"]} {contactInfo["fullName"]["firstName"]} {contactInfo["fullName"]["lastName"]}
+{contactInfo["address"]}
+{contactInfo["city"]}, {contactInfo["state"]} {contactInfo["zip"]}
+""")
