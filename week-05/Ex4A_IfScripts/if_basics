@@ -1,0 +1,27 @@
+x= 100
+y= 20
+
+if x/y == 5:
+    x =1
+else:
+    print("are the variables set correctly?") 
+if x*y == y:
+        print("now x*y=y")
+        x = 10
+else:
+    print(f"whoops x = {x}")
+
+
+if x<y:
+    print("x<y")
+    x+=x
+else:
+    print("uh oh x is not < y")
+
+if x> y:
+    print("how is x greater than y????????????")
+else:
+    print("x is NOT >y")
+
+print(f"the final value of x is {x} and the final value of y is {y}")
+

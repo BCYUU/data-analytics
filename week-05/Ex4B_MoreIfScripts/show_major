@@ -1,0 +1,29 @@
+studentName = "Neil Curtis"
+studentMajor = "ENG"       
+
+if studentMajor == "BIOL":
+    majorName = "Biology"
+    departmentOffice = "Science Bldg, Room 310"
+elif studentMajor == "CSCI":
+    majorName = "Computer Science"
+    departmentOffice = "Sheppard Hall, Room 314"
+elif studentMajor == "ENG":
+    majorName = "English"
+    departmentOffice = "Kerr Hall, Room 201"
+elif studentMajor == "HIST":
+    majorName = "History"
+    departmentOffice = "Kerr Hall, Room 114"
+elif studentMajor == "MKT":
+    majorName = "Marketing"
+    departmentOffice = "Westly Hall, Room 310"
+else:
+    majorName = "<unknown>"
+    departmentOffice = "nothing" # unless you actually wanted nothing in which case ""
+
+print(f"student name: {studentName}")
+print(f"major code: {studentMajor}")
+print(f"major name: {majorName}")
+if departmentOffice:
+    print(f"Department office: {departmentOffice}")
+else:
+    print("Department Office: (not available)")

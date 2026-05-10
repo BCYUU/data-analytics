@@ -1,0 +1,55 @@
+
+
+
+payRate = 1 #measly dollar
+hoursWorked = 40 # grueling hours
+finalPay = 0
+
+if hoursWorked > 40: # forgot to add back in the 40 dollars at first since I got distracted writing the pointless text bit
+    hoursWorked-= 40
+    finalPay = hoursWorked*payRate*1.5
+    finalPay+= payRate*40
+    print(f"wow you worked hard this week! looks like you managed to get {hoursWorked} hours of overtime and yet you still only made {finalPay} dollars, Congrats!")
+else:
+    finalPay = hoursWorked*payRate
+    print(f"your sad paycheck is {finalPay} better luck next pay period") # ok looks like it works
+
+weeksInYear = 52
+annualGrossPay = finalPay*weeksInYear
+
+filingStatus = input("filing status single or joint?\n")
+
+if filingStatus == "single":
+    if   annualGrossPay < 12000:
+        taxRate = 0.05
+    elif annualGrossPay <= 24999.99:
+        taxRate = 0.10
+    elif annualGrossPay <= 74999.99:
+        taxRate = 0.15
+    else:
+        taxRate = 0.20
+elif filingStatus == "joint":
+    if annualGrossPay < 12000:
+        taxRate = 0.00
+    elif annualGrossPay <= 24999.99:
+        taxRate = 0.06
+    elif annualGrossPay <= 74999.99:
+        taxRate = 0.11
+    else:
+        taxRate = 0.20
+else:
+    print("Invalid filing status. Defaulting to single.")
+    taxRate = 0.05 # just in case
+
+weeklyGrossPay = finalPay
+weeklyTaxWithheld = weeklyGrossPay * taxRate
+
+netPay = weeklyGrossPay - weeklyTaxWithheld
+
+print(f"You worked {hoursWorked} hours this period.")
+print(f"Because you earn ${payRate} per hour, your gross weekly pay is ${weeklyGrossPay:.2f}")
+print(f"Your filing status is {filingStatus}")
+print(f"Your tax withholding for the week is ${weeklyTaxWithheld:.2f}")
+print(f"Your net pay is ${netPay:.2f}")
+
+#looks good

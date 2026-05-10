@@ -1,0 +1,9 @@
+a = 1
+b = 2
+c = 3
+
+variables = [a,b,c]
+
+print(f"the lowest value is {min(variables)} \n and the highest value is {max(variables)} \n I'm sorry I didnt want to write out all of those if else statements")
+
+# I'll use it on the final one

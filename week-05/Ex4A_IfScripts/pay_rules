@@ -1,0 +1,14 @@
+
+
+
+payRate = 1 #measly dollar
+hoursWorked = 40 # grueling hours
+finalPay = () 
+
+if hoursWorked > 40: # forgot to add back in the 40 dollars at first since I got distracted writing the pointless text bit
+    hoursWorked-= 40
+    finalPay = hoursWorked*payRate*1.5
+    finalPay+= payRate*40
+    print(f"wow you worked hard this week! looks like you managed to get {hoursWorked} hours of overtime and yet you still only made {finalPay} dollars, Congrats!")
+else:
+    print(f"your sad paycheck is {hoursWorked*payRate} better luck next pay period") # ok looks like it works

@@ -1,0 +1,18 @@
+
+
+print("what time is it but only give me the hour number or else I dont feel like doing the other thing yet")
+print("oh and also in military time buddy")
+time = (int(input()))
+
+if time >4  and time < 10:
+    print("good morning fella")
+elif time >=10 and  time<17:
+    print("good day fella")
+elif time >=17 and time <=23:
+    print("good evening fella")
+elif time>= 23 or (time >=0 and time <= 3):
+    print("go to sleep please")
+else:
+    print("not quite my tempo")
+    
+

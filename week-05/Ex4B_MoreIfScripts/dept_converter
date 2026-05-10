@@ -1,0 +1,38 @@
+
+
+print("please enter DEP code")
+
+code = int(input()) # wow
+
+
+if code == 1:
+    print("marketing")
+elif code == 5:
+    print("HR")
+elif code == 10:
+    print("Accounting")
+elif code == 12:
+    print("Legal")
+elif code == 18:
+    print("IT")
+elif code == 20:
+    print("Customer Relations")
+else:
+    print("Unknown Department")
+
+
+match code:
+    case 1:
+        print("marketing")
+    case 5:
+        print("HR")
+    case 10:
+        print("accounting")
+    case 12:
+        print("legal")
+    case 18:
+        print("it")
+    case 20:
+        print("customer relations")
+    case _:
+        print("something is very wrong") # didnt comp[are to a classmate but it looks good to me

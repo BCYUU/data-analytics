@@ -8,3 +8,22 @@ c = "402 Stevens"
 d = 'Number 5  ' 
 
 
+# int(a) ValueError: invalid literal for int() with base 10: '  101.1 '
+int(b)
+# int(c) ValueError: invalid literal for int() with base 10: '402 Stevens'
+# int(d) ValueError: invalid literal for int() with base 10: 'Number 5  '
+
+float(a)
+float(b)
+# float(c) ValueError: could not convert string to float: '402 Stevens'
+# float(d) ValueError: could not convert string to float: 'Number 5  '
+
+int(float(a))
+
+numberPartD = d[7:]
+print(numberPartD) #still a string tho
+numberValueD = int(numberPartD) # I think this works
+print(numberValueD)
+
+print(a.strip())
+print(d.strip()) # ok looks good
