@@ -1,0 +1,25 @@
+# MGS3 SnakeEater List
+
+MGS3Characters = [
+    "Snake",
+    "The Boss",
+    "Ocelot",
+    "Eva",
+    "Volgin",
+    "The End", # missed a coma here
+    "Sokolov"
+]
+
+for index, item in enumerate(MGS3Characters,1):
+    if index == 1:
+        print(f"{index}. {item} <----------- top pick!!")
+    else:
+        print(f"{index}. {item}")
+
+
+
+# for index, item in enumerate(reversed(MGS3Characters),1): # didnt move the ,1 properly ----- actually it doesnt work anyway oops
+#     if item == "Snake":
+#         print(f"{index}. {item} <----------- top pick!!")
+#     else:
+#         print(f"{index}. {item}")

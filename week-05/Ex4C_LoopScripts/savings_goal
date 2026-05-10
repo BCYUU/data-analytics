@@ -1,0 +1,24 @@
+startingBalance = 0
+savingsGoal = 1000
+weeklySavingsAmount = 100
+treatCost = 50
+
+balance = startingBalance
+week = 0
+while balance< savingsGoal:
+    week += 1  # gotta love when the number goes up
+    balance += weeklySavingsAmount
+    halfway = savingsGoal/2
+    almostThere = savingsGoal * 0.75
+    if balance >= savingsGoal:
+        print("congrats goal met")
+        print(f"balance is ${balance:.2f}.")
+        break
+
+    if balance >= almostThere:
+        balance -= treatCost
+        print(f"so close, after treating myself, my balance is now ${balance:.2f} ")
+    elif balance>halfway:
+        print(f"so close, we are at ${balance:.2f}.")
+    else:
+        print(f"this week we are now at ${balance:.2f}.")
