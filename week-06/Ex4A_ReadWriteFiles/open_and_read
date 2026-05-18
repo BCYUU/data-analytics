@@ -1,0 +1,37 @@
+f = open("about_me.txt","r")
+#print(f.read(50))
+#print(f.read(50)) # didnt change anything but im assuming that if I had written more it would continue on from where the last one ended
+
+
+
+#print(f.readline(10))
+#print(f.readline())
+
+#for i in range(1, 5): 
+#   print(f.readline()) 
+
+
+#print(f.readlines()) # a list?
+#print(f.readlines(1)) # just the one line as a list
+#print(f.readlines(10)) # just line 1 and 2, looks like it starts counting backwards once it hits the end of the list if it runs out
+
+#print(f.readlines(100)) # just looks like it returns everything
+#print(f.readlines(-1)) # this also returns the whole thing?
+
+with open("about_me.txt", "r") as f:
+    # a) Read first 50 characters
+    A = f.read(50)
+
+    B = []
+    for _ in range(4):
+        line = f.readline()
+        if line == "":  
+            break
+        B.append(line)
+    C = f.readlines(100)
+
+print(f"First 50 characters: {A}")
+print(f"Next four lines, as list by line: {B}")
+print(f"Next 100 characters, as list by line, rounded up to complete lines: {C}")
+ # yeah I didnt write enough in the previous thing for this to output enough but it looks like its outputting correctly with what it has
+f.close

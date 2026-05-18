@@ -1,0 +1,3 @@
+f = open("about_me.txt","a")
+# f.write("\nGo back and not hurt Abel") worked
+f.close()
