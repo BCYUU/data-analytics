@@ -18,7 +18,7 @@ class Restaurant:
 
 
     def addNumServed(self, todayCus):
-        self.numberServed += todayCus #swapping to numServed and numberDerved also caused an error
+        self.numberServed += todayCus #swapping to numServed and numberDerved also caused an error # cant even write a comment correctly... sad!
 # add customers to total served
     def printNumServed(self):
         print(f"{self.restName} served {self.numberServed} customers")
