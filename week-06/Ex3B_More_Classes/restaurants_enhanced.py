@@ -18,7 +18,7 @@ class Restaurant:
 
 
     def addNumServed(self, todayCus):
-        self.numberServed += todayCus #swapping to numServed and numberDerved also caused an error
+        self.numberServed += todayCus #swapping to numServed and numberDerved also caused an error # cant even write a comment correctly... sad!
 # add customers to total served
     def printNumServed(self):
         print(f"{self.restName} served {self.numberServed} customers")
@@ -57,10 +57,6 @@ restaurant3.describeRest()
 restaurant3.restOpen()
 
 
-
-# Assuming the three instances already exist:
-# restaurant1, restaurant2, restaurant3 = ... (from previous step)
-
 restaurants = [restaurant1, restaurant2, restaurant3]
 
 # test printNumServed
@@ -79,7 +75,7 @@ for r in restaurants:
 print("\nCustomer ratings")
 for r in restaurants:
     print(f"\n{r.restName}")
-    # Call rating method multiple times; it will re‑prompt on invalid input
+    # call rating method multiple times; it will re‑prompt on invalid input
     r.cusRating()   # first rating
     r.cusRating()   # second rating
     # average update after each iteration
